@@ -20,6 +20,9 @@
             <a href="/projects" class="btn btn-secondary">
               <i class="fas fa-code"></i> Meus Projetos
             </a>
+            <a href="/assets/pdf/curriculo_allan_bismarck.pdf" download class="btn btn-outline">
+              <i class="fas fa-file-download"></i> Baixar Currículo
+            </a>
           </div>
           
           <div class="social-links">
@@ -172,6 +175,21 @@ const socialLinks = {
   gap: 8px;
   padding: 12px 25px;
   font-size: 1.05rem;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(74, 108, 247, 0.3);
 }
 
 .hero .social-links {
@@ -375,6 +393,10 @@ const socialLinks = {
   .cta-buttons .btn {
     width: 100%;
     justify-content: center;
+  }
+  
+  .btn-outline {
+    margin-top: 5px;
   }
 }
 
